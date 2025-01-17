@@ -1,0 +1,19 @@
+db:
+  type: "mysql"
+  config:
+    host: "127.0.0.1"
+    port: "3306"
+    db:  "gowork"
+    user: "root"
+    password: "123456"
+    maxCon: 500
+    maxIdle: 20
+
+redis:
+  host: "127.0.0.1"
+  port: "6379"
+  db: 0,
+  poolSzie: 50
+app:
+  port: "8899"
+  host: "localhost"

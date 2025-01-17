@@ -1,0 +1,16 @@
+{{define "index"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {{template "public_header" .Data.Header}}
+    {{template "public_sidebar" .Data.Sidebar}}
+    {{if eq .Temp "info"}}{{template "info" .Data.Content}}
+    {{else if eq .Temp "list"}}{{template "list" .Data.Content}}
+    {{end}}
+</body>
+</html>
+{{end}}
